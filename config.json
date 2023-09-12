@@ -1,0 +1,63 @@
+{
+    "interval_ms": 5000,
+    "temp_sources": [
+        {"name": "cpu", "path": "/sys/class/hwmon/hwmon6/temp1_input"},
+        {"name": "gpu", "path": "/sys/class/hwmon/hwmon0/temp2_input"}
+    ],
+    "cpu_fan": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "frnt_fan1": {
+        "temp_source_name": "gpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "frnt_fan2": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "frnt_fan3": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "frnt_fan4": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "rear_fan1": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    },
+    "rear_fan2": {
+        "temp_source_name": "cpu",
+        "ramp": [
+            {"temp_c": 30, "duty_cyc": 30 },
+            {"temp_c": 50, "duty_cyc": 70 },
+            {"temp_c": 70, "duty_cyc": 100 }
+        ]
+    }
+}
