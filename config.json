@@ -1,8 +1,9 @@
 {
     "interval_ms": 5000,
     "temp_sources": [
-        {"name": "cpu", "path": "/sys/class/hwmon/hwmon6/temp1_input"},
-        {"name": "gpu", "path": "/sys/class/hwmon/hwmon0/temp2_input"}
+        {"name": "cpu", "sensor": { "device_name": "k10temp", "sensor_name": "Tctl"}},
+        {"name": "gpu", "sensor": { "device_name": "amdgpu", "sensor_name": "junction" }},
+        {"name": "example", "path": "/sys/class/hwmon/hwmon0/temp1_input"}
     ],
     "cpu_fan": {
         "temp_source_name": "cpu",

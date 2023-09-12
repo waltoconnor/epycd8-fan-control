@@ -17,8 +17,15 @@ pub struct Config {
 // reads file in millicelsius
 #[derive(Deserialize)]
 pub struct TempSource {
-    pub path: String,
+    pub path: Option<String>,
+    pub sensor: Option<Sensor>,
     pub name: String
+}
+
+#[derive(Deserialize)]
+pub struct Sensor {
+    pub device_name: String,
+    pub sensor_name: String
 }
 
 #[derive(Deserialize)]
